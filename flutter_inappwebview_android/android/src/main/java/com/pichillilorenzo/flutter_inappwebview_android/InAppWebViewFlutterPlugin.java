@@ -19,6 +19,7 @@ import com.pichillilorenzo.flutter_inappwebview_android.service_worker.ServiceWo
 import com.pichillilorenzo.flutter_inappwebview_android.tracing.TracingControllerManager;
 import com.pichillilorenzo.flutter_inappwebview_android.webview.FlutterWebViewFactory;
 import com.pichillilorenzo.flutter_inappwebview_android.webview.InAppWebViewManager;
+import com.pichillilorenzo.flutter_inappwebview_android.webview.in_app_webview.InAppWebView;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.embedding.engine.plugins.activity.ActivityAware;
@@ -70,6 +71,8 @@ public class InAppWebViewFlutterPlugin implements FlutterPlugin, ActivityAware {
   @Nullable
   public Activity activity;
   public FlutterView flutterView;
+  public InAppWebView cachedView;
+  public String cachedUrl;
 
   public InAppWebViewFlutterPlugin() {}
 

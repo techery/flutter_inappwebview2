@@ -262,7 +262,7 @@ final public class InAppWebView extends InputAwareWebView implements InAppWebVie
       WebViewCompat.setWebViewRenderProcessClient(this, inAppWebViewRenderProcessClient);
     }
 
-    if (windowId == null || !WebViewFeature.isFeatureSupported(WebViewFeature.DOCUMENT_START_SCRIPT)) {
+    if (windowId == null || WebViewFeature.isFeatureSupported(WebViewFeature.DOCUMENT_START_SCRIPT)) {
       // for some reason, if a WebView is created using a window id,
       // the initial plugin and user scripts injected
       // with WebViewCompat.addDocumentStartJavaScript will not be added!

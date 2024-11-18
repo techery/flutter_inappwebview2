@@ -101,12 +101,12 @@ public class InAppBrowserWebViewController: UIViewController, InAppBrowserDelega
             id: id, webView: webView, settings: nil)
         webView.findInteractionController = findInteractionController
         findInteractionController.prepare()
-        
+
+        progressBar = UIProgressView(progressViewStyle: .bar)
+
         prepareWebView()
         webView.windowCreated = true
-        
-        progressBar = UIProgressView(progressViewStyle: .bar)
-        
+
         view = UIView()
         view.addSubview(webView)
         view.insertSubview(progressBar, aboveSubview: webView)
