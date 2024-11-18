@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: flutter_inappwebview_internal_annotations,generators
+dependency_overrides:
+  flutter_inappwebview_internal_annotations:
+    path: ../dev_packages/flutter_inappwebview_internal_annotations
+  generators:
+    path: ../dev_packages/generators

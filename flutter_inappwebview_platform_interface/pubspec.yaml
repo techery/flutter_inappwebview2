@@ -20,7 +20,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_inappwebview_internal_annotations: ^1.1.1
+  flutter_inappwebview_internal_annotations:
+    git:
+      url: https://github.com/techery/flutter_inappwebview2.git
+      path: dev_packages/flutter_inappwebview_internal_annotations
   plugin_platform_interface: ^2.1.8
 
 dev_dependencies:
