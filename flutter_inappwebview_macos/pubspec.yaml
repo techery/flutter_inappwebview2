@@ -22,7 +22,7 @@ dependencies:
     sdk: flutter
   flutter_inappwebview_platform_interface:
     git:
-      url: https://github.com/techery/flutter_inappwebview.git
+      url: https://github.com/techery/flutter_inappwebview2.git
       path: flutter_inappwebview_platform_interface
 
 dev_dependencies:
